@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cytoscape": "^3.33.1",
+    "cytoscape-cola": "^2.5.1"
+  }
+}
