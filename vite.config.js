@@ -2,6 +2,6 @@ export default {
   root: ".",
   base: "/A-DS7/",
   server: {
-    port: 3000,
+    port: 5713,
   },
 };

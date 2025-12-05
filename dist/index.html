@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/A-DS7/assets/favicon-B2aDwexJ.svg" type="image/svg+xml" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cytoscape Graph</title>
+    <style>
+      #cy {
+        width: 100%;
+        height: 500px;
+        border: 1px solid #ccc;
+      }
+    </style>
+
+    <script type="module" crossorigin src="/A-DS7/assets/index-CmjmbJOs.js"></script>
+    <link rel="stylesheet" crossorigin href="/A-DS7/assets/index-TZrNw7dA.css">
+  </head>
+  <body>
+    <div id="cy"></div>
+    <button id="fitBtn">Fit</button>
+    <input type="number" id="idIn" />
+    <button type="button" id="addId">Добавить</button>
+    <form id="connect">
+      <input type="text" name="name" id="name" />
+      <input type="number" name="source" id="source" placeholder="откуда" />
+      <input type="number" name="target" id="target" placeholder="куда" />
+      <button type="submit">Соеденить</button>
+    </form>
+  </body>
+</html>
