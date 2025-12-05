@@ -1,6 +1,9 @@
 export function addNode(id) {
   cy.add({ group: "nodes", data: { id: id, label: id } });
 }
+export function deleteNode(id) {
+
+}
 export function connect(name, source, target) {
   cy.add({
     group: "edges",
@@ -13,7 +16,6 @@ export function runCola() {
     name: "cola",
     fit: false,
     avoidOverlap: true,
-    randomize: true,
     infinite: true,
   }).run();
 }

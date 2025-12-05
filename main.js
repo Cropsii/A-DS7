@@ -1,11 +1,11 @@
-import cytoscape from "https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.33.1/cytoscape.esm.mjs";
+import cytoscape from "cytoscape";
+import cola from "cytoscape-cola";
 
-import cytoscapeCola from "https://cdn.jsdelivr.net/npm/cytoscape-cola@2.5.1/+esm";
-
-cytoscape.use(cytoscapeCola);
+cytoscape.use(cola);
 import { runCola } from "./moduls.js";
 
 console.log((82 % 24) + 1);
+
 window.cy = cytoscape({
   container: document.getElementById("cy"),
   style: [
@@ -60,6 +60,7 @@ cy.add([
   { data: { id: "e8", target: "1", source: "7" } },
   { data: { id: "e9", target: "2", source: "6" } },
 ]);
+
 setTimeout(() => cy.fit(), 1100);
 const fitBtn = document.getElementById("fitBtn");
 if (fitBtn) {
